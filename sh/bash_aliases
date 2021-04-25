@@ -1,0 +1,42 @@
+VIM=nvim
+
+alias \
+		ls='ls --color=auto' \
+		ll='ls -alF'\
+		la='ls -A' \
+		l='ls -CF' \
+		lR='ls -R' \
+		'cl'='clear' \
+		'reso'='source ~/.config/zshrc' \
+		'battery'='upower -i /org/freedesktop/UPower/devices/battery_BAT0 | grep %' \
+		'd'='doas' \
+		's'='doas' \
+		'sudo'='doas' \
+		'1..'='cd ..'  \
+		'2..'='cd ..;cd ..'  \
+		'3..'='cd ..;cd ..;cd ..'  \
+		'4..'='cd ..;cd ..;cd ..;cd ..'  \
+		'5..'='cd ..;cd ..;cd ..;cd ..;cd ..'  \
+		'6..'='cd ..;cd ..;cd ..;cd ..;cd ..;cd ..'  \
+		'7..'='cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..'  \
+		'8..'='cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..'  \
+		'9..'='cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..'  \
+		'10..'='cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..' \
+		'11..'='cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..;cd ..' \
+		all="make all" \
+		play="make play" \
+		clean="make clean" \
+		mkdir='mkdir -vp' \
+		logout="sudo pkill -u mask" \
+		xinstall="doas xbps-install" \
+		v=$VIM \
+		nv=$VIM \
+		vim=$VIM \
+		nvim=$VIM \
+		dv='doas $VIM' \
+		dnv='doas $VIM' \
+		dvim='doas $VIM' \
+		dnvim='doas $VIM' \
+		check="sudo grep Warning /var/log/rkhunter.log" \
+		sdwm="startx /usr/local/bin/dwm" \
+		scinnamon="startx /bin/cinnamon" \

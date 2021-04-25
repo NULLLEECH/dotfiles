@@ -1,0 +1,32 @@
+# ~/.zshrc
+. ~/.config/bashrc
+
+bindkey -v
+
+autoload -U colors && colors
+
+export MYVIMRC='~/.vim/.vimrc'
+export PROMPT="%{$fg[blue]%}( %{$fg[yellow]%}%m %{$fg[blue]%}\\ %{$fg[red]%}%n %{$fg[blue]%}) %{$fg[green]%}< %~ > %{$fg[red]%}%#%{$reset_color%} "
+export RPROMPT="%D %*"
+export HISTFILE=/tmp/history
+export HISTSIZE=999999999999999
+export SAVEHIST=999999999999999
+
+setopt autocd extendedglob
+unsetopt beep nomatch notify
+
+zstyle :compinstall filename '/home/mask/.zshrc'
+
+autoload -Uz compinit
+
+compinit
+
+. ~/.config/aliases
+
+nitrogen --restore
+
+clear
+echo
+pfetch
+battery
+echo

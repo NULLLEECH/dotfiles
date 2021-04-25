@@ -1,0 +1,20 @@
+# .bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+PS1='[\u@\h \W]\$ '
+
+HISTFILE=/tmp/history_BASH
+HISTSIZE=
+SAVEHIST=
+
+if [ -f ~/.config/aliases ]; then
+    . ~/.config/aliases
+fi
+
+if [ -f ~/.config/bashsrc/gpg_fast.sh ]; then
+    . ~/.config/bashsrc/gpg_fast.sh
+fi
+
+[ -f ~/.fzf.bash ] && bash ~/.fzf.bash
